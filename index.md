@@ -3,9 +3,9 @@ layout: default
 ---
 
 {% for post in site.posts %}
-  <li>
+  <body>
     <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
+  </body>
 {% endfor %}
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.

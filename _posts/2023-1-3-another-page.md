@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: writeup
 title: "Test page"
 author: your mom
 date: 2023-01-03 22:41:47
