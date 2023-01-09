@@ -2,20 +2,23 @@
 layout: frontpage
 ---
 
+<ul class="post-list">
   {% for post in site.posts %}
-  <article>
-    <span class="post-date">{{ post.date | date: '%b %-d, %Y' }}<br></span>
-    <span class="post-title">
+  <li class="post-list-li">
+    <span class="post-date">{{ post.date | date: '%b %-d, %Y' }}</span>
+    <h2 class="post-title">
       <a href="{{ post.url }}">
         {{ post.title }}
       </a>
+    </h2>
+    <span class="tag-list">
+      {% for tag in post.tags %}
+        <a>{{ tag }}</a> 
+      {% endfor %}
     </span>
-    <span><br>test</span>
-    <p>{{ post.excerpt }}
-    {% if post.content contains site.excerpt_separator %}
-      <a href="{{ site.baseurl }}{{ post.url }}">Read more</a>
-    {% endif %}
+    <p><br>
+    {{ post.content | strip_html | truncatewords:75}}
     </p>
-  </article>
-{% endfor %}
-
+  </li>
+  {% endfor %}
+</ul>
