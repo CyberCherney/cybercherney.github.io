@@ -12,6 +12,7 @@ layout: frontpage
       </a>
     </h2>
     <span class="tag-list">
+      tags: 
       {% for tag in post.tags %}
         <a>{{ tag }}</a> 
       {% endfor %}
