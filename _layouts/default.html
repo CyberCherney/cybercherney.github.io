@@ -6,30 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
     <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
-    <link rel="stylesheet" href="/assets/css/bootstrap-toc.min.css"
+    <link rel="stylesheet" href="{{ '/assets/css/bootstrap-toc.min.css' | relative_url }}" type="text/css">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
 
-{% seo %}
-
-    {% include head-custom.html %}
   </head>
 
-  <body>
+  <body  data-bs-spy="scroll" data-bs-target="#toc">
     <header>
       <div class="inner">
         <a href="{{ '/' | absolute_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          <h1 data-toc-skip>{{ site.title | default: site.github.repository_name }}</h1>
         </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-        {% if site.github.is_project_page %}
-          <a href="{{ site.github.repository_url }}" class="button"><small>View project on</small> GitHub</a>
-        {% endif %}
-        {% if site.github.is_user_page %}
-          <a href="{{ site.github.owner_url }}" class="button"><small>Follow me on</small> GitHub</a>
-        {% endif %}
+        <h2 data-toc-skip>{{ site.description | default: site.github.project_tagline }}</h2>
       </div>
     </header>
 
@@ -37,8 +28,8 @@
 
 
     <footer>
-      <script src="/assets/js/jquery-3.6.3.min.js" integrity="sha384-16dfef6f8f0bc2c004b6096d8fba3eeafb52d9eb1353d3c2a43a9c5ece0e09540566ee41aa9ac7b54099e248caf9ba44" crossorigin="anonymous"></script>
-      <script src="/assets/js/bootstrap.min.js" integrity="sha384-7152883e1196882d80978bbe2d68317ca4d121c7eed094f147e1100f3fdb8257681329781f4cd417440a6eb27411c405" crossorigin="anonymous"></script>
+      <script src="/assets/js/jquery-3.6.3.min.js" integrity="sha384-Ft/vb48LwsAEtgltj7o+6vtS2esTU9PCpDqcXs4OCVQFZu5BqprHtUCZ4kjK+bpE" crossorigin="anonymous"></script>
+      <script src="/assets/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
       <script src="/assets/js/bootstrap-toc.min.js"></script>
     </footer>
   </body>
