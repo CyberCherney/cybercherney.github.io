@@ -9,7 +9,14 @@ layout: default
         {{ content }}
     </section>
     <aside id="sidebar">
-      <a href="#">{{page.title}}</a>
+      <br>
+      <a href="#" style="color:#fff; font-size: 22px;">{{page.title}}</a>
+      <br>
+      <span class="tag-list"> 
+        {% for tag in page.tags %}
+          <a>{{ tag }}</a> 
+        {% endfor %}
+      </span>
       <nav id="toc" data-toggle="toc"></nav>
     </aside>
   </div>
