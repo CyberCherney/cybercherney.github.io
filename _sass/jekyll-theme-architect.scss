@@ -154,7 +154,7 @@ pre code {
 }
 
 ul, ol, dl {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 
@@ -372,6 +372,18 @@ footer a:hover {
   padding-left: 0px;
 }
 
+nav[data-toggle="toc"] {
+  top: 42px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.sticky-top {
+  top: 80px;
+  position: sticky;
+}
 
 .clearfix {display: inline-block;}
 * html .clearfix {height: 1%;}
@@ -379,6 +391,28 @@ footer a:hover {
 
 /* #Media Queries
 ================================================== */
+
+/* small screens */
+@media (max-width: 768px) {
+  /* override stickyness so that the navigation does not follow scrolling */
+  nav[data-toggle="toc"] {
+    margin-bottom: 42px;
+    position: static;
+  }
+
+  /* PICK ONE */
+  /* don't expand nested items, which pushes down the rest of the page when navigating */
+  nav[data-toggle="toc"] .nav .active .nav {
+    display: none;
+  }
+  /* alternatively, if you *do* want the second-level navigation to be shown (as seen on this page on mobile), use this */
+  /*
+  nav[data-toggle='toc'] .nav .nav {
+    display: block;
+  }
+  */
+}
+
 
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) { }
