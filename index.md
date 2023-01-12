@@ -18,7 +18,7 @@ layout: frontpage
       {% endfor %}
     </span>
     <p><br>
-    {{ post.content | strip_html | truncatewords:75}}
+    {{ post.post_description }}
     </p>
   </li>
   {% endfor %}
