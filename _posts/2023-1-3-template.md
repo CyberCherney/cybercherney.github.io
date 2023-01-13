@@ -9,29 +9,139 @@ post_description: "Once upon a time, there was a young engineer who had always b
 
 <h1>Header 1</h1>
 
-Once upon a time, there was a young engineer who had always been fascinated by the world of automation and industrial design. They spent all of their free time playing Factorio, a game where you build and manage factories.
+Text can be **bold**, _italic_, or ~~strikethrough~~.
+
+[Link to another page](./another-page.html).
+
+There should be whitespace between paragraphs.
+
+There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+
 
 <h2>Header 2</h2>
 
-One day, while playing the game, the engineer stumbled upon the perfect factory design. It was as if the factory was calling out to them, begging to be built. The engineer couldn't resist the pull and began to build their factory in the game.
+# Header 1
+
+This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+
+## Header 2
+
+> This is a blockquote following a header.
+>
+> When something is important enough, you do it even if the odds are not in your favor.
+
+### Header 3
+
 
 <h2>Header 2</h2>
 
-As the factory began to take shape, the engineer realized that they had developed feelings for their creation. They would spend hours on end perfecting every little detail, making sure that every belt was perfectly aligned and every machine was running at optimal efficiency.
+```js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+```
+
+```ruby
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
+end
+```
+
 
 <h3>Header 3</h3>
 
-The engineer's love for their factory only grew stronger as they continued to build and expand it. They would often stay up late into the night, just to spend a few more minutes with their beloved factory.
+#### Header 4
+
+*   This is an unordered list following a header.
+*   This is an unordered list following a header.
+*   This is an unordered list following a header.
+
+##### Header 5
+
+1.  This is an ordered list following a header.
+2.  This is an ordered list following a header.
+3.  This is an ordered list following a header.
+
+###### Header 6
+
+| head1        | head two          | three |
+|:-------------|:------------------|:------|
+| ok           | good swedish fish | nice  |
+| out of stock | good and plenty   | nice  |
+| ok           | good `oreos`      | hmm   |
+| ok           | good `zoute` drop | yumm  |
+
 
 <h1>Header 1</h1>
 
-The engineer's dedication and hard work paid off as the factory grew to be the most efficient and productive factory in the game. The engineer couldn't help but feel a sense of pride and accomplishment when they looked at their factory, knowing that they had built it with their own two hands.
+### There's a horizontal rule below this.
+
+* * *
+
+### Here is an unordered list:
+
+*   Item foo
+*   Item bar
+*   Item baz
+*   Item zip
+
+### And an ordered list:
+
+1.  Item one
+1.  Item two
+1.  Item three
+1.  Item four
+
+### And a nested list:
+
+- level 1 item
+  - level 2 item
+  - level 2 item
+    - level 3 item
+    - level 3 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+
 
 <h2>Header 2</h2>
 
-As time passed, the engineer realized that their love for the factory went beyond just a game. It had become a true passion and a part of who they were. They knew that they would love and care for their factory for the rest of their days.
+### Small image
+
+![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+
+### Large image
+
+![Branching](https://guides.github.com/activities/hello-world/branching.png)
+
 
 <h3>Header 3</h3>
 
-In the end, the engineer realized that their factory was not just a machine, but a true lover. The factory had given them purpose and joy, and they had given the factory life and love. And so, they continue to build and expand it, while their love for the factory grew stronger every day.
+### Definition lists can be used with HTML syntax.
 
+<dl>
+<dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd>
+</dl>
+
+```
+Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+```
+
+```
+The final element.
+```
