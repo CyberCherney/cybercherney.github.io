@@ -29,6 +29,7 @@ header {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   background: #252525 url(../images/header-bg.jpg) 0 0 repeat-x;
   border-bottom: solid 1px #275da1;
+  z-index: 1200;
 }
 
 header h1 {
@@ -87,7 +88,8 @@ aside#sidebar {
   line-height: 1.3;
   background: transparent url(../images/sidebar-bg.jpg) 0 0 no-repeat;
   position: sticky;
-  top: 80px;
+  top: 136px;
+  z-index: 1200;
 }
 
 aside#sidebar p.repo-owner,
@@ -341,6 +343,11 @@ li {
 .sticky-top {
   top: 80px;
   position: sticky;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
 }
 
 .clearfix {display: inline-block;}
