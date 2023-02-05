@@ -350,6 +350,27 @@ li {
   top: 0;
 }
 
+#main-content h1::before {
+  display: block;
+  height: 127px;
+  margin-top: -127px;
+  content: " ";
+}
+
+#main-content h2::before {
+  display: block;
+  height: 127px;
+  margin-top: -127px;
+  content: " ";
+}
+
+#main-content h3::before {
+  display: block;
+  height: 127px;
+  margin-top: -127px;
+  content: " ";
+}
+
 .clearfix {display: inline-block;}
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
