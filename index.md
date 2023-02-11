@@ -19,7 +19,7 @@ layout: frontpage
     </span>
     <p><br>
     <picture>
-      <img src="{{ post.icon }}" style="float: right; height: 95px; margin-top: -110px;">
+      <img src="{{ post.icon }}" alt="box icon" style="float: right; height: 95px; margin-top: -110px;">
     </picture>
     {{ post.post_description }}
     </p>
