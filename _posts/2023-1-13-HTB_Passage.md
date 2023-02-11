@@ -3,8 +3,8 @@ layout: post
 title: "HTB: Passage"
 author: Andrew Cherney
 date: 2023-01-13 19:49:23
-icon: ""
 tags: htb medium-box
+icon: "/assets/icons/passage.png"
 post_description: "The solution to Passage is quite research heavy and not so technically demanding. The CMS is vulnerable due to its specific version which gives a foothold, a pivot takes place to gain better permissions, and root can be obtained from a usbcreator d-bus service which allows for copying files as root."
 ---
 
