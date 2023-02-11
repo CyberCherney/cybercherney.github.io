@@ -4,6 +4,7 @@ title: "Template"
 author: Andrew Cherney
 date: 2023-01-03 22:41:47
 tags: writeup htb
+icon: "assets/icons/"
 post_description: "Once upon a time, there was a young engineer who had always been fascinated by the world of automation and industrial design. They spent all of their free time playing Factorio, a game where you build and manage factories."
 ---
 
