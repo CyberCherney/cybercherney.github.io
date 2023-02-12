@@ -5,7 +5,7 @@ author: Andrew Cherney
 date: 2023-02-10 19:59:00
 tags: htb easy-box
 icon: "/assets/icons/paper.png"
-post_description: "The box Paper had an integration of the Dunder Mifflin paper company from the show 'The Office'. Each of the core characters makes an appearance on the blog hosted for the company. Michael Scott or otherwise known as Prisonmike leaves a secret draft with the registration for an internal chat service Rocket Chat. After a brief exploiting of the dwight created bot recyclops for user, root can be gained from a polkit vulnerability."
+post_description: "The box Paper had an integration of the Dunder Mifflin paper company from the show 'The Office'. Michael Scott or otherwise known as Prisonmike leaves a secret draft with the registration for an internal chat service Rocket Chat. After a brief exploiting of the dwight created bot recyclops for user, root can be gained from a polkit vulnerability."
 ---
 
 <h1>Summary</h1>
