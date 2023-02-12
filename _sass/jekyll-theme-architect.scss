@@ -353,24 +353,24 @@ li {
 }
 
 #main-content h1::before {
-  display: block;
-  height: 127px;
-  margin-top: -127px;
   content: " ";
+  margin-top: -127px;
+  height: 127px;
+  display: block;  
 }
 
 #main-content h2::before {
-  display: block;
-  height: 127px;
-  margin-top: -127px;
   content: " ";
+  margin-top: -127px;
+  height: 127px;
+  display: block;  
 }
 
 #main-content h3::before {
-  display: block;
-  height: 127px;
-  margin-top: -127px;
   content: " ";
+  margin-top: -127px;
+  height: 127px;
+  display: block;  
 }
 
 .clearfix {display: inline-block;}
@@ -430,7 +430,6 @@ li {
   #main-content h6:before {
     padding-right: 0;
     margin-left: 0;
-    content: none;
   }
 }
 
