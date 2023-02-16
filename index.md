@@ -18,9 +18,9 @@ layout: frontpage
       {% endfor %}
     </span>
     <p><br>
-    <picture>
+    <a href="{{ post.url }}">
       <img src="{{ post.icon }}" alt="box icon" style="float: right; height: 95px; margin-top: -110px;">
-    </picture>
+    </a>
     {{ post.post_description }}
     </p>
   </li>
