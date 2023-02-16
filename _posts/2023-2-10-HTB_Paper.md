@@ -172,7 +172,7 @@ linpeas.sh              100%[===============================>] 808.74K   986KB/s
 
 I throw the output into a file so I can use grep to search for common vulnerabilities. Using **tee** I can see the linpeas output and it goes to the file. 
 
-__Editors Note: When doing the box initially linpeas reveals a CVE the box is vulnerable to, but this time around it didn't flag it as being vulnerable. Trying something like this wouldn't be too out of the ordinary in the initial foothold steps, right next to "sudo -l" or "find / -perms /400 2>/dev/null"__
+__Editors Note: When doing the box initially linpeas reveals a CVE the box is vulnerable to, but this time around it didn't flag it as being vulnerable. Trying something like this wouldn't be too out of the ordinary in the initial foothold steps, right next to "sudo -l" or "find / -perm /4000 2>/dev/null"__
 
 There is a [poc exploit in python for CVE-2021-3560](https://github.com/Almorabea/Polkit-exploit/blob/main/CVE-2021-3560.py) to abuse the polkit version and create a root user.  
 
