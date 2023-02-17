@@ -1,21 +1,16 @@
 ---
 layout: post
-title: "Template"
+title: ""
 author: Andrew Cherney
-date: 2023-01-03 22:41:47
-tags: writeup htb
+date: 
+tags: htb
 icon: "assets/icons/"
-post_description: "Once upon a time, there was a young engineer who had always been fascinated by the world of automation and industrial design. They spent all of their free time playing Factorio, a game where you build and manage factories."
+post_description: ""
 ---
 
-<h1>Header 1</h1>
+<h1>Summary</h1>
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
+{{ page.post_description }}
 
 <h2>Header 2</h2>
 
