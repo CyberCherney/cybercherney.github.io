@@ -1,0 +1,12 @@
+{% if include.src %}{% assign imgpath = include.src | append: '.' | append: include.ext %}{% else %}{% assign imgpath = include.imgpath %}{% endif %}
+{% if include.alt %}{% assign alttext = include.alt %}{% else %}{% assign alttext = include.alttext %}{% endif %}
+{% if include.trunc > 0 %}
+<div style="max-height: {{ include.trunc }}px; overflow: hidden; position: relative; margin-bottom: 20px;">
+  <a href="{{ imgpath }}">
+    <img src="{{ imgpath }}" style="clip-path: polygon(0 0, 100% 0, 100% {{ include.trunc | minus: 40 }}px, 49% {{ include.trunc | minus: 10 }}px, 51% {{ include.trunc | minus: 30 }}px, 0 {{ include.trunc }}px); -webkit-clip-path: polygon(0 0, 100% 0, 100% {{ include.trunc | minus: 40 }}px, 49% {{ include.trunc | minus: 10 }}px, 51% {{ include.trunc | minus: 30 }}px, 0 {{ include.trunc }}px)" alt="{{ alttext }}" />
+  </a>
+  <div style="position: absolute; right: 20px; top: {{ include.trunc | minus: 25 }}px"><a href="{{ imgpath }}"><i>Click for full image</i></a></div>
+</div>
+{% else %}
+[![{{ alttext }}]({{ imgpath }})*Click for full size image*]({{ imgpath }})
+{% endif %}
