@@ -37,9 +37,9 @@ PORT   STATE SERVICE
 
 I scour through some html and javascript code before checking the Wappalyzer add-on. This lets me see what is being used in the page, everything from CDNs and coding languages to OS and server versions (all dependent on how locked down the data leak is). 
 
-<h2>User as james</h2>
+<h1>User as james</h1>
 
-<h3>Zerodium PHP</h3>
+<h2>Zerodium PHP</h2>
 
 ![php version](/img/knife/Knife_wappalyzer_php_version.png)
 
