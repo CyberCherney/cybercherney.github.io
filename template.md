@@ -12,7 +12,11 @@ post_description: ""
 
 {{ page.post_description }}
 
-<h2>Header 2</h2>
+<h1>Enumeration</h1>
+
+{% include img_link src="/img/box/front_page" alt="front_page" ext="png" trunc=600 %}
+
+
 
 # Header 1
 
