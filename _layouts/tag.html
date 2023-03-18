@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div id="content-wrapper">
+  <div class="inner clearfix">
+    <section id="front-page">
+      <h1>Tag: {{ page.tag }}</h1>
+
+      {% for object in page.objects %}
+        <h3>
+          <a href="{{ object.url }}">{{ object.title }}</a>
+        </h3>
+        <p>{{ object.description }}</p>
+      {% endfor %}
+    </section>
+  </div>
+</div>
+
