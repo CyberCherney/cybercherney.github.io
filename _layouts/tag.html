@@ -7,12 +7,12 @@ layout: default
     <section id="front-page">
       <h1>Tag: {{ page.tag }}</h1>
 
-      {% for object in page.objects %}
-        <h3>
-          <a href="{{ object.url }}">{{ object.title }}</a>
-        </h3>
-        <p>{{ object.description }}</p>
+      {% for post in site.posts %}
+      {% if post.tags contains page.tag %}
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      {% endif %}
       {% endfor %}
+
     </section>
   </div>
 </div>
