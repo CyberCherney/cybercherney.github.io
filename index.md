@@ -2,6 +2,7 @@
 layout: frontpage
 ---
 
+<h1>Posts</h1>
 <ul class="post-list">
   {% for post in site.posts %}
   <li class="post-list-li">
@@ -14,7 +15,7 @@ layout: frontpage
     <span class="tag-list">
       tags: 
       {% for tag in post.tags %}
-        <a href="/tags/{{ tag }}">{{ tag }}</a> 
+        <a href="/tags#{{ tag }}">{{ tag }}</a> 
       {% endfor %}
     </span>
     <p><br>
