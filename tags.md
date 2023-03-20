@@ -3,25 +3,54 @@ layout: frontpage
 title: Tags
 ---
 
-
 <h1>Tags</h1>
 
 <div class="search-bar">
-  <input type="text" id="search-tags" placeholder="Search tags..." style="color:#fff;">
+  <input type="text" id="search-tags" placeholder="Search tags..." style="color:#2879d0;">
 </div>
 
 {% assign sorted_tags = site.tags | sort %}
 
 {% for tag in sorted_tags %}
-  <h2 id="{{ tag[0] }}">{{ tag[0] }}</h2>
-  <ul>
+  <div class="tag">
+    <h2 id="{{ tag[0] }}">{{ tag[0] }}</h2>
     {% for post in tag[1] %}
-      <li class="post {{ tag[0] }}">
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
+      <a href="{{ post.url }}">
+        <div class="post {{ tag[0] }}">
+          <div class="title">{{ post.title }}</div>
+          <div class="date">{{ post.date | date: "%b %d, %Y" }}</div>
+        </div>
+      </a>
     {% endfor %}
-  </ul>
+  </div>
 {% endfor %}
+
+<style>
+  .tag {
+    margin-bottom: 2rem;
+  }
+  
+  .post {
+    display: inline-block;
+    background-color: #f7f7f7;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+  
+  .title {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+  
+  .date {
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+</style>
 
 <script>
   // Search tags based on user input
