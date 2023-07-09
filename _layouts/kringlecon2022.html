@@ -1,0 +1,61 @@
+---
+layout: post
+---
+
+<head>
+<style>
+    .menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100px;
+    }
+    
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      height: 50%;
+    }
+    
+    .bottom-row {
+      display: flex;
+      justify-content: space-between;
+      height: 50%;
+    }
+    
+    .menu-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px;
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+      box-shadow: 0 0 0 3px white;
+      flex: 1;
+    }
+    
+    .menu-item.longest {
+      flex: 2;
+    }
+</style>
+</head>
+<body>
+    <div class="menu">
+      <div class="top-row">
+        <a class="menu-item" href="/pages/2022Kringlecon/WebRing.html">Web Ring</a>
+        <a class="menu-item" href="/pages/2022Kringlecon/ElfenRing.html">Elfen Ring</a>
+        <a class="menu-item" href="/pages/2022Kringlecon/TolkienRing.html">Tolkien Ring</a>
+      </div>
+      <div class="bottom-row">
+        <a class="menu-item" href="/pages/2022Kringlecon/CloudRing.html">Cloud Ring</a>
+        <a class="menu-item longest" href="/pages/2022Kringlecon/BurningRingOfFire.html">Burning Ring of Fire</a>
+      </div>
+    </div>
+  </body>
+<br>
+<br>
+
+{{content}}
