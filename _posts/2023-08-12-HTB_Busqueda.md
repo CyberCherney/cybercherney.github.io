@@ -5,7 +5,7 @@ author: Andrew Cherney
 date: 2023-08-12 16:14:08
 tags: htb easy-box
 icon: "assets/icons/busqueda.png"
-post_description: "Much like RedPanda this box starts with exploiting a search engine. I hope your python is up to the test. Next we look for remnants of a git repo and gain access to private scripts running on the machine, which are then exploited for root."
+post_description: "Much like RedPanda this box starts with exploiting a search engine. I hope your python is up to the test. Next we look for an exploit using docker inspect to get into a git repo and gain access to private scripts running on the machine, which are then exploited for root."
 ---
 
 <h1>Summary</h1>
