@@ -7,4 +7,4 @@ The image truncating is from ![0xdf's gitlab for their site](https://gitlab.com/
 {% include img_link src="/img/backdoor/front_page" alt="front_page" ext="png" trunc=600 %}
 ```
 
-This site is a WiP as I port over old HTB writeups and write the new non-active box writeups. Probably planning to add links and an about me/contact me. Tags page is up in the air: looking for a simple jekyll plugin to create and manage the pages. There is an odd bug where some script blocks will not scroll, might fix that later.
+This site is a WiP as I port over old HTB writeups and write the new non-active box writeups. Probably planning to add links and an about me/contact me. There is an odd bug where some script blocks will not scroll, might fix that later.
