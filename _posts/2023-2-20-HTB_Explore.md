@@ -3,7 +3,7 @@ layout: post
 title: "HTB: Explore"
 author: Andrew Cherney
 date: 2023-02-20 20:18:32
-tags: htb easy-box
+tags: htb easy-box android 
 icon: "assets/icons/explore.png"
 post_description: "Android can be a beast to pentest and enumerate, but this box does a decent job of giving leads. The credentials are found in what I can only assume is the user writing it down and taking  a picture not to forget. Then root can be gained through the locally open 5555 port for android debug bridge."
 ---

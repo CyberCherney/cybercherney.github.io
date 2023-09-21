@@ -3,7 +3,7 @@ layout: post
 title: "HTB: Timelapse"
 author: Andrew Cherney
 date: 2023-01-26 20:58:03
-tags: htb easy-box
+tags: htb easy-box active-directory smb john windows
 icon: "/assets/icons/timelapse.png"
 post_description: "The steps to solve this box require knowledge in certificate/key infrastructure, Windows services, command history files, and LAPS permissions. Initial foothold steps utilize password cracking for both a zip and pfx file to yield public and private keys. Then a hard coded password can be found and the local admin password can be read after pivoting to that new account. "
 ---

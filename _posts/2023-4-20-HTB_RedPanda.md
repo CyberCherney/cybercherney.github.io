@@ -3,7 +3,7 @@ layout: post
 title: "HTB: RedPanda"
 author: Andrew Cherney
 date: 2023-04-20 21:26:28
-tags: htb easy-box
+tags: htb easy-box linux webapp xxe ssti
 icon: "assets/icons/redpanda.png"
 post_description: "The name of the game for this box is trial and error. RedPanda the search engine for red panda pictures is vulnerable to SSTI. Post user there are two jar files being run which need to be investigated. After understanding how they work the user needs to change image metadata, abuse directory traversal, and use an XXE to get the root ssh key."
 ---

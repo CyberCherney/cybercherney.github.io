@@ -3,7 +3,7 @@ layout: post
 title: "HTB: Investigation"
 author: Andrew Cherney
 date: 2023-04-24 19:38:31
-tags: htb medium-box
+tags: htb medium-box linux webapp ghidra binary-exploitation
 icon: "assets/icons/investigation.png"
 post_description: "Solving this box can be a bit of an eye opener. Exiftool is normally not thought of as an attack vector but this machine eloquently uses a vulnerable version for a foothold. After a quick grep-ing through some Event Logs user can be obtained. The final piece of the puzzle is dissecting a binary file and running it with sudo to gain root."
 ---

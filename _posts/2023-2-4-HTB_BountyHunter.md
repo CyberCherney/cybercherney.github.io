@@ -3,7 +3,7 @@ layout: post
 title: "HTB: BountyHunter"
 author: Andrew Cherney
 date: 2023-02-04 12:38:51
-tags: htb easy-box
+tags: htb easy-box linux webapp xxe python
 icon: "/assets/icons/bountyhunter.png"
 post_description: "User for this box incorporates XML XXE in a bug reporting forum and using that exploit to read a discovered database. Root is obtained through a python sandbox escape from a custom script with NOPASSWD sudo access."
 ---

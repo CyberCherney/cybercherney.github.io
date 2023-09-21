@@ -3,7 +3,7 @@ layout: post
 title: "HTB: Soccer"
 author: Andrew Cherney
 date: 2023-06-17 11:30:20
-tags: htb easy-box
+tags: htb easy-box linux webapp sqli 
 icon: "assets/icons/soccer.png"
 post_description: "Rev up that default credential list and reverse shell, since to get www-data you need to find the CMS and abuse both. Next your knowledge of websockets better be up to par, as a middleman server is needed to scrape an SQL database on a websocket. Last and certainly least GTFOBins gives us root."
 ---

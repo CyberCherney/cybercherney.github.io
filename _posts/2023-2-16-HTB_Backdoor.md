@@ -3,7 +3,7 @@ layout: post
 title: "HTB: Backdoor"
 author: Andrew Cherney
 date: 2023-02-16 17:35:05
-tags: easy-box htb
+tags: easy-box htb linux webapp wordpress 
 icon: "assets/icons/backdoor.png"
 post_description: "This box involves quite a bit of enumeration and creativity to solve for an easy box. First you need to identify the plugins of the wordpress site, then identify the vulnerable one. After that the processes are to be read and scoured for a foothold after discovering a vulnerable service on port 1337. Root can then be obtained by attaching a detached root screen."
 ---

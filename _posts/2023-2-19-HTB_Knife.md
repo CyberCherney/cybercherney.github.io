@@ -3,7 +3,7 @@ layout: post
 title: "HTB: Knife"
 author: Andrew Cherney
 date: 2023-02-19 20:18:57
-tags: htb easy-box
+tags: htb easy-box linux webapp
 icon: "assets/icons/knife.png"
 post_description: "Simplicity at its finest. A quick backdoor exploit from a vulnerable php version, and then a trip to GTFOBins can root this box. Bare bones and to the point."
 ---
