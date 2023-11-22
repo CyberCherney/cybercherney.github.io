@@ -3,7 +3,7 @@ layout: post
 title: "HTB: Jupiter"
 author: Andrew Cherney
 date: 2023-10-22 12:19:03
-tags: htb medium-box postgres yaml binary
+tags: htb medium-box linux postgres yaml binary
 icon: "assets/icons/jupiter.png"
 post_description: "This box started by finding raw SQL queries within a Grafana service. After abusing that query we can gain RCE and thusly a shell. Next a network testing script with an SUID bit can be abused to pivot to a user. An SSH tunnel can be used to access the locally hosted Jupyter notetaking service, which contains a python interpreter to pivot to another user. Finally a sudo permission can be leveraged to access root files and download an auth_keys file into root's ssh folder."
 ---

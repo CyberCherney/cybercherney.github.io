@@ -3,7 +3,7 @@ layout: post
 title: "HTB: Topology"
 author: Andrew Cherney
 date: 2023-11-05 15:25:18
-tags: htb easy-box LaTeX john gnuplot
+tags: htb easy-box linux LaTeX john gnuplot
 icon: "assets/icons/topology.png"
 post_description: "If obscure math programming languages and plotting tools are up your wheelhouse then this box will be a breeze. An interesting look at the vulnerabilities that lie waiting within academia though either outdated or improperly used tools."
 ---
