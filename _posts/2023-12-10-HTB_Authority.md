@@ -117,6 +117,8 @@ As you can see from the directory tree I have downloaded an Ansible automation s
 
 <h2>Ansible</h2>
 
+{% raw %}
+
 ```bash
 ┌─[raccoon@cyberraccoon-virtualbox]─[~/_hacking/HackTheBox/Active/Authority]
 └──╼ $cat Automation/Ansible/PWM/defaults/main.yml
@@ -156,6 +158,8 @@ ldap_admin_password: !vault |
           3238343230333633350a646664396565633037333431626163306531336336326665316430613566
           3764
 ```
+
+{% endraw %}
 
 And in the process I find the ansible vault with the pwm admin pass and login. there is also the LDAP admin password but at this moment I'm not sure if cracking that would be helpful. 
 
