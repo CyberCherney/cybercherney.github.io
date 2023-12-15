@@ -7,9 +7,9 @@ title: About
 # About
 ___
 
-Hey there, happy you've decided to stop by. This site serves as my personal blog for hacking writeups, projects, and other blog-esque activities. Typically I participate in Capture the Flag events (CTFs) and machine hacking challenges and post the steps I used to complete the respective challenge. Below you will find a short description of my certifications in the event you are unfamiliar with them. 
+Hey there, happy you've decided to stop by. This site serves as my personal blog for hacking writeups, projects, and other blog-esque activities. Typically I participate machine hacking challenges and CTFs then post the steps I used to complete the respective challenge. Below you will find a short description of my certifications in the event you are unfamiliar with them. 
 
-If you wish to see the main post feed of this site, click CyberCherney or use this link: [Main feed](index).
+If you wish to see the main post feed of this site, click the large CyberCherney up above or use this link: [Main feed](index).
 
 <br>
 
