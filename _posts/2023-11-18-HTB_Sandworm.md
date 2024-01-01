@@ -84,7 +84,7 @@ Here I could have gotten a shell but I decided to overcomplicate a tad. You see 
 
 <h2>pgpsstiexploit.py</h2>
 
-[The finished exploit.](https://github.com/CyberCherney/random_scripts/blob/main/hacking/pgpsstiexploit.py)
+[The finished exploit.](https://github.com/CyberCherney/random_scripts/blob/main/hacking/htb_exploits/pgpsstiexploit.py)
 
 In short this automates keygen, pgp key cleaning, message signing, and payload sending and I use it to scan around for hours before deciding I could have completely subverted this process and gotten shell long ago. 
 
