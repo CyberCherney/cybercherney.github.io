@@ -3,7 +3,7 @@ layout: post
 title: "HTB: MetaTwo"
 author: Andrew Cherney
 date: 2023-04-29 17:34:59
-tags: htb easy-box linux webapp sqli xxe john
+tags: htb easy-box linux webapp sqli xxe john cve upload-bypass pgp
 icon: "assets/icons/metatwo.png"
 post_description: "Wordpress in little surprise to anyone gives us both an initial foothold account and the credentials for a user account. The former through a vulnerable scheduling plugin, and the latter through an image upload bypass to read a config file. The root password is obtained through brute forcing a pgp key to access a passpie password."
 ---

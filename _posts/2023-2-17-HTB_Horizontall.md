@@ -3,7 +3,7 @@ layout: post
 title: "HTB: Horizontall"
 author: Andrew Cherney
 date: 2023-02-17 19:55:05
-tags: htb easy-box linux webapp 
+tags: htb easy-box linux webapp cve
 icon: "assets/icons/horizontall.png"
 post_description: "This box is a great example of how much information can be leaked by basic scripts and services. A javascript file leaks a subdomain with an api, and then the login portal leaks the vulnerable version of strapi being run. To gain root there is a somewhat clever way of ssh tunneling to manipulate a vulnerable local service on the box."
 ---

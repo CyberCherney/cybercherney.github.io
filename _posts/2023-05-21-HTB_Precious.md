@@ -3,7 +3,7 @@ layout: post
 title: "HTB: Precious"
 author: Andrew Cherney
 date: 2023-05-21 08:20:27
-tags: htb easy-box linux webapp deserialization 
+tags: htb easy-box linux webapp deserialization cve ruby yaml
 icon: "assets/icons/precious.png"
 post_description: "We start this machine by exploiting a command injection of a ruby package to gain a foothold, and escalate that to user with hard coded credentials. For root a simple ruby script exploitation of a load() function will do the trick."
 ---

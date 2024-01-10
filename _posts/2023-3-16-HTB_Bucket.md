@@ -3,7 +3,7 @@ layout: post
 title: "HTB: Bucket"
 author: Andrew Cherney
 date: 2023-03-16 21:13:57
-tags: htb medium-box linux cloud aws 
+tags: htb medium-box linux cloud aws cve
 icon: "assets/icons/bucket.png"
 post_description: "The steps outlined in this summary involve identifying a hidden subdomain, scanning for directories, using the AWS Command Line Interface (CLI) to grab credentials from a NoSQL database named DynamoDB, uploading a reverse shell to an S3 bucket using the AWS CLI, and exploiting a vulnerable version of Polkit for root access."
 ---

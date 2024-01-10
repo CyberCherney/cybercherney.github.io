@@ -3,7 +3,7 @@ layout: post
 title: "HTB: Stocker"
 author: Andrew Cherney
 date: 2023-07-16 11:44:17
-tags: htb easy-box linux webapp nosqli 
+tags: htb easy-box linux webapp nosqli xss
 icon: "assets/icons/stocker.png"
 post_description: "Webdevs will cry after seeing this box. Imagine sanitizing your json that interacts with your API, or not using a vulnerable login portal. A healthy lack of trust in webdevs is all you need to hack this box."
 ---

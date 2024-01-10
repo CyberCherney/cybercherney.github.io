@@ -3,7 +3,7 @@ layout: post
 title: "HTB: Authority"
 author: Andrew Cherney
 date: 2023-12-10 11:31:41
-tags: htb medium-box smb pwm adcs certipy impacket
+tags: htb medium-box smb pwm adcs certipy impacket active-directory windows
 icon: "assets/icons/authority.png"
 post_description: "In classic Windows environment fashion this box starts by grabbing some configuration files from smb on port 445. Then after some PWM config shuffling we can scan to find a certificate template that is used to grant Domain Admin to the user we have."
 ---

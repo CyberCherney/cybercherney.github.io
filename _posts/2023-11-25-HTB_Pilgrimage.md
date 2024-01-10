@@ -3,7 +3,7 @@ layout: post
 title: "HTB: Pilgrimage"
 author: Andrew Cherney
 date: 2023-11-25 16:42:58
-tags: htb easy-box linux webapp upload-bypass 
+tags: htb easy-box linux webapp upload-bypass cve
 icon: "assets/icons/pilgrimage.png"
 post_description: "If bypassing image upload restrictions is your favorite activity then look no further than this box. After tEXt-ing your way into the machine pspy64 can find a file which is vulnerable to a CVE that can be exploited gain a root shell."
 ---

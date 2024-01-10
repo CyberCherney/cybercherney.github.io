@@ -3,7 +3,7 @@ layout: post
 title: "HTB: BroScience"
 author: Andrew Cherney
 date: 2023-04-09 19:04:59
-tags: htb medium-box linux webapp deserialization john 
+tags: htb medium-box linux webapp deserialization john bash
 icon: "assets/icons/broscience.png"
 post_description: "During the pentest, I identified multiple vulnerabilities. Firstly, I was able to exploit directory traversal to access sensitive files. Additionally, I leveraged an activation code generating script to create an account and then utilized insecure deserialization to rewrite a class that could download a shell from a webserver I controlled. With the help of hard-coded database credentials, I generated a custom salted wordlist to crack user passwords, and finally, I injected code into a bash script that insecurely used a variable in a command."
 ---

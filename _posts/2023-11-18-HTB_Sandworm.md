@@ -3,7 +3,7 @@ layout: post
 title: "HTB: Sandworm"
 author: Andrew Cherney
 date: 2023-11-18 10:28:35
-tags: htb medium-box linux ssti gpg rust
+tags: htb medium-box linux ssti gpg rust custom-code
 icon: "assets/icons/sandworm.png"
 post_description: "Sandworm's https site is meant to emulate a secure message transferring site, modelled after some over government sites. Getting past that uses a script I made to exploit SSTI. Through some config sifting and code manipulation you can gain user, and to finish it off a vulnerable service to obtain root."
 ---
