@@ -30,7 +30,6 @@ PORT   STATE SERVICE
 |_  256 1a:e9:72:be:8b:b1:05:d5:ef:fe:dd:80:d8:ef:c0:66 (ED25519)
 80/tcp open  http
 |_http-title: Site doesn't have a title (text/html).
-
 ```
 
 <h2>http - port 80</h2>
