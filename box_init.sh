@@ -16,6 +16,7 @@ cat << header > $dir/-HTB_$upper.md
 layout: post
 title: "HTB: $upper"
 box: $lower
+img: /img/$lower/$lower
 author: Andrew Cherney
 date: 
 tags: htb $diff-box
