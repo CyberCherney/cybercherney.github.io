@@ -3,7 +3,7 @@ layout: post
 title: "HTB: CozyHosting"
 author: Andrew Cherney
 date: 2024-03-02 11:24:20
-tags: htb medium-box linux webapp command-injection postgres john session-hijacking
+tags: htb easy-box linux webapp command-injection postgres john session-hijacking
 icon: "assets/icons/cozyhosting.png"
 post_description: "The foothold can be obtained from hijacking a session to gain access to an admin portal, then command injecting into an ssh utility within the admin utilities. Postgres dumps a credential which john can crack for another user. A little stdin/stdout redirecting can be used to gain a root shell with sudo."
 ---
