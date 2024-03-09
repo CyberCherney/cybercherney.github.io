@@ -75,9 +75,9 @@ Target: http://zipping.htb/
 Task Completed
 ```
 
-![front page](/img/zipping/zipping_front_page.png)
+{% include img_link src="/img/zipping/zipping_front_page" alt="front_page" ext="png" trunc=600 %}
 
-![store page](/img/zipping/zipping_front_page.png)
+![store page](/img/zipping/zipping_store_page.png)
 
 ![upload page](/img/zipping/zipping_upload_page.png)
 
