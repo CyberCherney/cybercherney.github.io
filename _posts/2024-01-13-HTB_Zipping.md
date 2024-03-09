@@ -256,7 +256,7 @@ if (isset($_POST['product_id'], $_POST['quantity'])) {
 
 The regex defining what is allowed in the parameter hard declares the end of the line with `$`. This is excellent news as we can use the new line byte %0a and run whatever we want permitting it runs within the database service. 
 
-[https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/php-tricks-esp#preg_match-]
+[https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/php-tricks-esp#preg_match-](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/php-tricks-esp#preg_match-)
 
 
 THe service in question is MYSQL and has leaked creds in the `functions.php` hidden file. The final piece to this puzzle is LFI from `shop/index.php`:
@@ -278,7 +278,7 @@ include $page . '.php';
 
 With that logic so long as the file exists and is php we can GET it. A common way to exploit SQL if you have LFI is to create files within the `/var/lib/mysql/` directory as SQL should have permissions to write there. The other important part of this puzzle is **INTO OUTFILE**, where MySQL allows you to send the results of a query (or defined string) into a file.
 
-For more on that: [https://www.exploit-db.com/papers/14635]
+For more on that: [https://www.exploit-db.com/papers/14635](https://www.exploit-db.com/papers/14635)
 
 ```sql
 %0a';select '<?php phpinfo(); ?>' into outfile '/var/lib/mysql/raccoon.php'; --1
