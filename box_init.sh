@@ -30,6 +30,11 @@ post_description: ""
 
 # Enumeration
 
+{% include img_link src="/img/$lower/$lower_front_page" alt="front_page" ext="png" trunc=600 %}
+
+![]({{ page.img }}_pic.png)
+
+
 
 header
 
