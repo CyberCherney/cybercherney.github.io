@@ -7,9 +7,11 @@ title: About
 # About
 ___
 
-Hey there, happy you've decided to stop by. This site serves as my personal blog for hacking writeups, projects, and other blog-esque activities. Typically I participate machine hacking challenges and CTFs then post the steps I used to complete the respective challenge. Below you will find a short description of my certifications in the event you are unfamiliar with them. Clicking the icon itself will bring you to credly allowing you to verify my possession of the certificate.
+Hey there, happy you've decided to stop by. This site serves as my personal blog for hacking writeups, projects, and other blog-esque activities. Typically I participate machine hacking challenges and CTFs then post the steps I used to complete the respective challenge. I enjoy looking through new environments and finding/exploiting vulnerabilities, then trying to determine what would stop my attacks. I have been doing this for around 4 years, though much of the initial 2 years was learning fundamental technologies at play and the recent 2 years has been developing off of those skills and honing my abilities. I'm driven by passion and knowledgeable within the field, and I would be more ecstatic to be given the opportunity to demonstrate those abilities.
 
-If you wish to see the main post feed of this site, click the large CyberCherney up above or use this link: [Main feed](index).
+
+
+If you wish to see the main post feed of this site, click the large CyberCherney up above or use this link: [Main feed](index). Below you will find a short description of my certifications in the event you are unfamiliar with them. Clicking the icon itself will bring you to credly allowing you to verify my possession of the certificate.
 
 <br>
 
