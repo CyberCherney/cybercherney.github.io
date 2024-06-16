@@ -2,3 +2,6 @@ title: CyberCherney
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-architect
+
+plugins:
+  - jekyll-seo-tag
