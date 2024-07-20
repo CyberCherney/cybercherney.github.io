@@ -107,7 +107,7 @@ curl 10.10.11.8:5000
 ...
 ```
 
-{% include img_link src="/img/headless/headless_5000_" alt="front_page" ext="png" trunc=600 %}
+{% include img_link src="/img/headless/headless_5000_front_page" alt="front_page" ext="png" trunc=600 %}
 
 I looked over the webpage and there wasn't any link or reference besides support.
 
