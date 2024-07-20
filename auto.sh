@@ -89,6 +89,12 @@ mv $directory img
 
 while [[ $# -gt 0 ]]; do 
     case $1 in
+        -h|--help)
+            echo "-i or --init to initialize box directory/post"
+            echo "-p or --prep to format images within box directory to markdown"
+            echo "-u or --upload to prep post and images for upload"
+            shift
+            ;;
         -i|--init)
             echo "Running box init script"
             box_init
