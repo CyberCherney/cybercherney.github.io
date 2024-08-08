@@ -284,7 +284,7 @@ Changing the permissions
 Done!
 ```
 
-We can use a simple fuzzing script to iterate through every option adding * to the end to find out the password here. [https://github.com/CyberCherney/random_scripts/blob/main/hacking/bashscriptpasswordbrute.py](https://github.com/CyberCherney/random_scripts/blob/main/hacking/bashscriptpasswordbrute.py) is what I wrote and used. 
+We can use a simple fuzzing script to iterate through every option adding * to the end to find out the password here. [This basic brute forcing script](https://github.com/CyberCherney/random_scripts/blob/main/hacking/htb_exploits/bashscriptpasswordbrute.py) is what I wrote and used. 
 
 ```bash
 joshua@codify:~$ python3 exploit.py 
