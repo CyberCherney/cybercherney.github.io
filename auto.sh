@@ -10,6 +10,7 @@ read -p "Enter the challenge name: " name
 read -p "Enter the box difficulty: " diff
 lower=`echo "${name,,}"`
 upper=`echo "${name^}"`
+lower_front_page=$lower"_front_page"
 
 dir="_activeboxes/$lower"
 
