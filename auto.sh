@@ -72,7 +72,7 @@ post=`echo ${post_name,,}`
 directory=`echo "_activeboxes/$post"`
 
 # modifying and moving post
-file=`ls _activeboxes/$post | grep '.md'`
+file=`ls _activeboxes/$post | grep '.md$'`
 date=`date  +"%Y-%m-%d"`
 name=`echo "$date$file"`
 sed -i "/date:/s/$/$date/" $directory/$file
