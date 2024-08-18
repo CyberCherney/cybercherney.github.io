@@ -23,8 +23,9 @@ a:hover {
   color: #2268b2;
 }
 
-.site_title {
-  color: inherit;
+.site_title a {
+  text-decoration: none;
+  color: #fff
 }
 
 header {
