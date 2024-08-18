@@ -1,209 +1,99 @@
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
-.highlight .cm {
-  color: #999988;
+
+/* Comments */
+.highlight .cm, .highlight .c, .highlight .cd, .highlight .c1 {
+  color: #00ff00; /* Bright green for comments */
   font-style: italic;
 }
-.highlight .cp {
-  color: #999999;
+
+/* Preprocessor, constants, decorators */
+.highlight .cp, .highlight .cs, .highlight .err, .highlight .gr, .highlight .gt {
+  color: #ff5555; /* Bright red for preprocessor and errors */
   font-weight: bold;
 }
-.highlight .c1 {
-  color: #999988;
-  font-style: italic;
-}
-.highlight .cs {
-  color: #999999;
-  font-weight: bold;
-  font-style: italic;
-}
-.highlight .c, .highlight .cd {
-  color: #999988;
-  font-style: italic;
-}
-.highlight .err {
-  color: #a61717;
-  background-color: #e3d2d2;
-}
-.highlight .gd {
-  color: #000000;
-  background-color: #ffdddd;
-}
+
+/* General emphasis */
 .highlight .ge {
-  color: #000000;
+  color: #f8f8f2; /* Light gray text */
   font-style: italic;
 }
-.highlight .gr {
-  color: #aa0000;
+
+/* Deleted lines */
+.highlight .gd {
+  color: #ff5555; /* Red for deleted text */
+  background-color: #1e1e1e;
 }
-.highlight .gh {
-  color: #999999;
-}
+
+/* Inserted lines */
 .highlight .gi {
-  color: #000000;
-  background-color: #ddffdd;
+  color: #50fa7b; /* Green for inserted text */
+  background-color: #1e1e1e;
 }
-.highlight .go {
-  color: #888888;
-}
-.highlight .gp {
-  color: #555555;
-}
+
+/* Generic strong */
 .highlight .gs {
   font-weight: bold;
+  color: #00ff00; /* Bright green */
 }
+
+/* Line numbers */
 .highlight .gu {
-  color: #aaaaaa;
+  color: #666666; /* Dimmed gray for line numbers */
 }
-.highlight .gt {
-  color: #aa0000;
-}
-.highlight .kc {
-  color: #000000;
+
+/* Keywords */
+.highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt, .highlight .k, .highlight .kv {
+  color: #ff79c6; /* Pink for keywords */
   font-weight: bold;
 }
-.highlight .kd {
-  color: #000000;
-  font-weight: bold;
+
+/* Numbers, literals */
+.highlight .mf, .highlight .mh, .highlight .il, .highlight .mi, .highlight .mo, .highlight .m, .highlight .mb, .highlight .mx {
+  color: #bd93f9; /* Light purple for numbers and literals */
 }
-.highlight .kn {
-  color: #000000;
-  font-weight: bold;
+
+/* Strings */
+.highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss, .highlight .s {
+  color: #f1fa8c; /* Yellow for strings */
 }
-.highlight .kp {
-  color: #000000;
-  font-weight: bold;
+
+/* Attribute names */
+.highlight .na, .highlight .vc, .highlight .vg, .highlight .vi, .highlight .nv {
+  color: #50fa7b; /* Bright green for attribute names */
 }
-.highlight .kr {
-  color: #000000;
-  font-weight: bold;
+
+/* Built-in names */
+.highlight .bp, .highlight .nb, .highlight .nn, .highlight .nt, .highlight .w, .highlight .go, .highlight .gp {
+  color: #8be9fd; /* Cyan for built-ins */
 }
-.highlight .kt {
-  color: #445588;
-  font-weight: bold;
-}
-.highlight .k, .highlight .kv {
-  color: #000000;
-  font-weight: bold;
-}
-.highlight .mf {
-  color: #009999;
-}
-.highlight .mh {
-  color: #009999;
-}
-.highlight .il {
-  color: #009999;
-}
-.highlight .mi {
-  color: #009999;
-}
-.highlight .mo {
-  color: #009999;
-}
-.highlight .m, .highlight .mb, .highlight .mx {
-  color: #009999;
-}
-.highlight .sb {
-  color: #d14;
-}
-.highlight .sc {
-  color: #d14;
-}
-.highlight .sd {
-  color: #d14;
-}
-.highlight .s2 {
-  color: #d14;
-}
-.highlight .se {
-  color: #d14;
-}
-.highlight .sh {
-  color: #d14;
-}
-.highlight .si {
-  color: #d14;
-}
-.highlight .sx {
-  color: #d14;
-}
-.highlight .sr {
-  color: #009926;
-}
-.highlight .s1 {
-  color: #d14;
-}
-.highlight .ss {
-  color: #990073;
-}
-.highlight .s {
-  color: #d14;
-}
-.highlight .na {
-  color: #008080;
-}
-.highlight .bp {
-  color: #999999;
-}
-.highlight .nb {
-  color: #0086B3;
-}
+
+/* Class names */
 .highlight .nc {
-  color: #445588;
+  color: #50fa7b; /* Bright green for class names */
   font-weight: bold;
 }
-.highlight .no {
-  color: #008080;
-}
-.highlight .nd {
-  color: #3c5d5d;
+
+/* Function names */
+.highlight .nf, .highlight .nl {
+  color: #ffb86c; /* Orange for function names */
   font-weight: bold;
 }
-.highlight .ni {
-  color: #800080;
-}
-.highlight .ne {
-  color: #990000;
+
+/* Operator and punctuation */
+.highlight .o, .highlight .ow {
+  color: #ff79c6; /* Pink for operators and punctuation */
   font-weight: bold;
 }
-.highlight .nf {
-  color: #990000;
+
+/* Annotations and meta information */
+.highlight .nd, .highlight .ni, .highlight .ne {
+  color: #ff5555; /* Red for meta and annotation */
   font-weight: bold;
 }
-.highlight .nl {
-  color: #990000;
-  font-weight: bold;
-}
-.highlight .nn {
-  color: #555555;
-}
-.highlight .nt {
-  color: #000080;
-}
-.highlight .vc {
-  color: #008080;
-}
-.highlight .vg {
-  color: #008080;
-}
-.highlight .vi {
-  color: #008080;
-}
-.highlight .nv {
-  color: #008080;
-}
-.highlight .ow {
-  color: #000000;
-  font-weight: bold;
-}
-.highlight .o {
-  color: #000000;
-  font-weight: bold;
-}
-.highlight .w {
-  color: #bbbbbb;
-}
+
+/* Default text color */
 .highlight {
-  background-color: #f8f8f8;
+  background-color: #1d1f21; /* Dark background */
+  color: #f8f8f2; /* Light gray text */
 }
