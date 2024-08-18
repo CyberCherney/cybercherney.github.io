@@ -17,6 +17,7 @@ title: Tags
     {% for post in tag[1] %}
       <a href="{{ post.url }}">
         <div class="post {{ tag[0] }}">
+          <img src="{{ post.icon }}" alt="icon" style="float: left; height: 50px; margin-left: -60px;">
           <div class="title">{{ post.title }}</div>
           <div class="date">{{ post.date | date: "%b %d, %Y" }}</div>
         </div>
@@ -39,23 +40,29 @@ title: Tags
   
   .post {
     display: inline-block;
-    background-color: #f7f7f7;
+    background-color: #444;
     padding: 0.5rem;
     border-radius: 0.25rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
     font-size: 0.9rem;
     line-height: 1.2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    padding-left: 67.5px;
+    position: relative;
   }
-  
+
+
   .title {
-    font-weight: bold;
+    font-weight: Bold;
     margin-bottom: 0.25rem;
+    color: #ffffff;
   }
   
   .date {
     font-style: italic;
     font-size: 0.8rem;
+    color: #ffffff;
   }
 </style>
 
