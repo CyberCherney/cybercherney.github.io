@@ -155,11 +155,6 @@ pre {
   background-color: #444;
 }
 
-
-div {
-  padding-bottom: 15px;
-}
-
 /* Style the highlight div as a terminal with a header */
 div .highlight {
   position: relative;
@@ -167,6 +162,7 @@ div .highlight {
   overflow: hidden;
   margin-top: 20px; 
   background-color: #1d1f21; 
+  padding-bottom: 15px;
 }
 
 /* Create the terminal header using a pseudo-element */
