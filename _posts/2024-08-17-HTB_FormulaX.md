@@ -43,7 +43,7 @@ axios.post(`/user/api/login`, {
 
 When looking at the register page it makes a POST to another api endpoint, **/user/api/register** I make my username `raccoon'"]})=-+:;>` to check for any errors when the application returns my name. I tried the same for email but it had properly functioning regex to force an email address. 
 
-{% include img_link src="/img/formulax/formulax_register_page.png" alt="front_page" ext="png" trunc=600 %}
+{% include img_link src="/img/formulax/formulax_register_page" alt="front_page" ext="png" trunc=600 %}
 
 ![restricted home post login]({{ page.img }}_restricted_home.png)
 
