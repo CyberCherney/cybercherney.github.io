@@ -20,9 +20,11 @@
   <body  data-bs-spy="scroll" data-bs-target="#toc">
     <header class="site-header">
       <div class="inner">
-        <a href="{{ '/' | absolute_url }}">
-          <h1 data-toc-skip>{{ site.title | default: site.github.repository_name }}</h1>
-        </a>
+            <h1 data-toc-skip id="site_title">
+              <a href="{{ '/' | absolute_url }}" id="site_title">
+                {{ site.title | default: site.github.repository_name }}
+              </a>
+            </h1>
       </div>
     </header>
 
