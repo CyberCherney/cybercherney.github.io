@@ -5,3 +5,4 @@ theme: jekyll-theme-architect
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-redirect-from
