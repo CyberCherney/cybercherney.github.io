@@ -567,6 +567,18 @@ li {
     margin-left: 0;
     content: none;
   }
+  .menu-container {
+    float: right;
+    position: relative;
+    right: 20px;
+    bottom: 30px;
+  }
+  .menu-item {
+      margin: 0 10px; 
+      text-decoration: none; 
+      color: #fff; 
+      font-size: 25px; 
+  }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
