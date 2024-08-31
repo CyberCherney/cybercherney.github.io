@@ -3,7 +3,7 @@ layout: post
 title: "HTB: Shared"
 author: Andrew Cherney
 date: 2023-04-26 19:52:08
-tags: htb medium-box linux webapp sqli 
+tags: htb medium-box linux webapp sqli redis 
 icon: "assets/icons/shared.png"
 post_description: "SQLi, ipython, and Redis (oh my). This box starts off with fuzzing a store page to find an SQLi where you get the password for a user. Next that user has access to a script testing/reviewing directory which could be exploited to run commands at another user. The cherry on top is the redis sandbox escape after finding a binary which leaked the redis password."
 ---
