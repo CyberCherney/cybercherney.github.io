@@ -15,7 +15,7 @@ layout: frontpage
     <span class="tag-list">
       tags: 
       {% for tag in post.tags %}
-        <a href="/tags#{{ tag }}">{{ tag }}</a> 
+        <a href="/tags#{{ tag }}" data-proofer-ignore>{{ tag }}</a> 
       {% endfor %}
     </span>
     <p><br>

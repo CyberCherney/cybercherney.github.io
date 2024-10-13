@@ -8,7 +8,7 @@ layout: default
       <br>
         {{ content }}
     </section>
-    <aside id="sidebar" data-proofer-ignore>
+    <aside id="sidebar">
       <br>
       <a href="#top" style="color:#fff; font-size: 22px;">{{page.title}}</a>
       <br>
@@ -16,7 +16,7 @@ layout: default
       <br>
       <span class="tag-list"> 
         {% for tag in page.tags %}
-          <a href="/tags#{{ tag }}">{{ tag }} </a> 
+          <a href="/tags#{{ tag }}" data-proofer-ignore>{{ tag }} </a> 
         {% endfor %}
       </span>
       <nav id="toc" data-toggle="toc"></nav>
