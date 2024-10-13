@@ -14,6 +14,12 @@ lower_front_page=$lower"_front_page"
 
 dir="_activeboxes/$lower"
 
+# check to not overwrite
+if [ -d $dir ]; then
+    echo 'Directory already exists'
+    exit 1
+fi
+
 mkdir $dir
 
 cat << header > $dir/-HTB_$upper.md
@@ -52,6 +58,13 @@ function prep_image () {
 read -p "Enter the box: " box_raw
 box=`echo "${box_raw,,}"`
 directory="_activeboxes/$box"
+
+# directory check
+if [ ! -d $directory ]; then
+    echo "No directory named $box"
+    exit 1
+fi
+
 length=$((${#box}+1))
 imgs=$(ls $directory | grep "$(echo $box)_")
 
@@ -70,6 +83,12 @@ function upload_post () {
 read -p "Enter the post to upload: " post_name
 post=`echo ${post_name,,}`
 directory=`echo "_activeboxes/$post"`
+
+# directory check
+if [ ! -d $directory ]; then
+    echo "No directory named $box"
+    exit 1
+fi
 
 # modifying and moving post
 file=`ls _activeboxes/$post | grep '.md$'`
