@@ -2,6 +2,27 @@
 
 set -e
 
+# Ensure Ruby is installed and in the right path
+if ! ruby -v | grep "3.1"; then
+  echo "Ruby 3.1 is not installed. Installing Ruby 3.1..."
+  if [ -d "/opt/hostedtoolcache/Ruby/3.1.4/x64" ]; then
+    echo "Ruby already installed in the cache"
+  else
+    echo "Installing Ruby with rbenv..."
+    git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+    cd ~/.rbenv && src/configure && make -C src
+    echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+    echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+    source ~/.bashrc
+    git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+    ~/.rbenv/bin/rbenv install 3.1.4
+    ~/.rbenv/bin/rbenv global 3.1.4
+    touch /opt/hostedtoolcache/Ruby/3.1.4/x64.complete
+  fi
+else
+  echo "Ruby 3.1 is already installed."
+fi
+
 bundle exec jekyll build
 bundle exec htmlproofer ./_site --check-html --check-sri
 bundle exec rubocop -D --config .rubocop.yml
