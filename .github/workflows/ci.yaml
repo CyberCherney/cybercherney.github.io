@@ -10,9 +10,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Ruby
-        uses: ruby/setup-ruby@8575951200e472d5f2d95c625da0c7bec8217c42 # v1.161.0
+        uses: ruby/setup-ruby@1 # v1.161.0 if errors add 8575951200e472d5f2d95c625da0c7bec8217c42
         with:
           ruby-version: '3.1'
           bundler-cache: true
-      - name: build
-        run: script/bootstrap
+      - name: install dependencies
+        run: |
+          bundle install
+      - name: run ci build
+        run: script/cibuild
