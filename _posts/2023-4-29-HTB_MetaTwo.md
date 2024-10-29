@@ -34,7 +34,7 @@ PORT   STATE SERVICE
 
 <h2>Port 80 - http</h2>
 
-{% include img_link src="/img/metatwo/front_page" alt="front_page" ext="png" trunc=600 %}
+{% include img_link src="/img/metatwo/Meta_front_page" alt="front_page" ext="png" trunc=600 %}
 
 This site is a bare bones wordpress site with an event signup page for the start up meeting. The requests carries the follow information:
 
