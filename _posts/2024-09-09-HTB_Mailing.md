@@ -5,7 +5,7 @@ box: mailing
 img: /img/mailing/mailing
 author: Andrew Cherney
 date: 2024-09-09
-tags: htb easy-box windows webapp cve smtp lfi directory-traversal responder libreoffice
+tags: htb easy-box windows webapp cve smtp lfi directory-traversal responder libreoffice season-5
 icon: "assets/icons/mailing.png"
 post_description: "A semi-standard windows experience of a box fit with outdated software and common Active Directory exploit vectors. To start the webapp is vulnerable to directory traversal and gives LFI on the windows system. The .ini file for the hMailServer service can be read to give an admin account login password. Through that mail service the user maya can be emailed to exploit an outlook CVE to capture an NTLM hash upon SMB resource access attempt. That hash when cracked gives a foothold to discover an outdated LibreOffice version and a suspicious directory. Another CVE can be leveraged to run commands as local admin and change maya's permissions to compromise the box."
 ---

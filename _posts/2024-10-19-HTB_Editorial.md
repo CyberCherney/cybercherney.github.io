@@ -5,7 +5,7 @@ box: editorial
 img: /img/editorial/editorial
 author: Andrew Cherney
 date: 2024-10-19
-tags: htb easy-box ssrf linux git python cve
+tags: htb easy-box ssrf linux git python cve season-5
 icon: "assets/icons/editorial.png"
 post_description: "Quick 3 parter of simple easy box tropes. Entry with some SSRF, pivot with git logs, and code exploitation for root."
 ---

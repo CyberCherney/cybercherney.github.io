@@ -5,7 +5,7 @@ box: blurry
 img: /img/blurry/blurry
 author: Andrew Cherney
 date: 2024-10-12
-tags: htb medium-box linux webapp python pytorch pickle sudo 
+tags: htb medium-box linux webapp python pytorch pickle sudo season-5
 icon: "assets/icons/blurry.png"
 post_description: "There's an old saying: a pickle in the hand is worth two in the Blurry. That is to mean starting this box is configuring a ClearML agent+account, then using a python script to create a .pkl file and upload it for a shell as jippity. Sudo is enabled for a custom python script to evaluate models. An exploit online can be used to inject the .pkl file in that archive utilizing runpy to import a maliciously crafted module to gain a shell as root. I feel like the name Dill would have been more suited given the box's solutions."
 ---

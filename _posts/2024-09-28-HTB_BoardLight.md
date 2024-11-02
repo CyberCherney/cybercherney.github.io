@@ -5,7 +5,7 @@ box: boardlight
 img: /img/boardlight/boardlight
 author: Andrew Cherney
 date: 2024-09-28
-tags: htb easy-box linux webapp php binary-exploitation cve
+tags: htb easy-box linux webapp php binary-exploitation cve season-5
 icon: "assets/icons/boardlight.png"
 post_description: "From default credentials and a service specific CVE to hard coded credentials and a tool CVE, this box is straightforward and can be solved exclusively with simple enumeration."
 ---

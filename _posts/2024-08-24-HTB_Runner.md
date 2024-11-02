@@ -5,7 +5,7 @@ box: runner
 img: /img/runner/runner
 author: Andrew Cherney
 date: 2024-08-24
-tags: htb medium-box linux webapp cve docker john
+tags: htb medium-box linux webapp cve docker john season-5
 icon: "assets/icons/runner.png"
 post_description: "This box starts with a CVE affecting TeamCity which creates and admin user. The new admin user can enable the debugging processes to allow for RCE from the same exploit, giving a foothold as tcuser. An ssh key can be found and after testing for both home users it can be determined to be john's. A local portainer service can be accessed after backing up the teamcity webapp and grepping for an admin hash. Lastly a CVE allows for setting the working directory to a specific location to get a root shell."
 
