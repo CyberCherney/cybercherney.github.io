@@ -556,7 +556,7 @@ Content-Length: 194
 DNT: 1
 Connection: close
 
-êÀ·BeginInvokeDotNetFromJS¡2À¬NotifyChangeÙº[[{"blob":{},"size":9216,"name":"../../../../../../../../../opt/components/racc_shell.dll","id":1,"lastModified":"2024-08-24T04:24:12.616Z","contentType":"application/x-msdos-program"}]]
+êÀ·BeginInvokeDotNetFromJS¡2À¬NotifyChangeÙº[[{"blob":{},"size":9216,"name":"../../../../../../../../../opt/components/racc_shell.dll","id":1,"lastModified":"2024-08-24T04:24:12.616Z","contentType":"application/x-msdos-program"}]]
 ```
 
 Same error as an empty file: bad IL format. I try another way at making my own dll from scratch before deciding it's better to shell out *FileUpload.dll*. I then need try to read tomas' key. Some of this was added with the assistance of Senior Dev GPT, and namely the builder and render parts got very upset in my testing if I ever modified or changed them. 
