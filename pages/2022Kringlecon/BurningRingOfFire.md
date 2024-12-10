@@ -3,7 +3,10 @@ layout: kringlecon2022
 title: "Burning Ring of Fire"
 author: "Andrew Cherney"
 date: 2023-01-15 19:52:13
-tags: kringlecon blockchain smart-contract
+tags: 
+- kringlecon 
+- blockchain 
+- smart-contract
 ---
 ## Blockchain Divination
 ___

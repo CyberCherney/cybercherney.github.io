@@ -3,7 +3,10 @@ layout: kringlecon2022
 title: "Web Ring"
 author: "Andrew Cherney"
 date: 2023-01-15 19:52:13
-tags: kringlecon html xxe
+tags: 
+- kringlecon 
+- html 
+- xxe
 ---
 ## 404 FTW
 ***

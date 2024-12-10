@@ -3,7 +3,10 @@ layout: kringlecon2022
 title: "Cloud Ring"
 author: "Andrew Cherney"
 date: 2023-01-15 19:52:13
-tags: kringlecon cloud aws
+tags: 
+- kringlecon 
+- cloud 
+- aws
 ---
 ## AWS CLI Intros
 ***

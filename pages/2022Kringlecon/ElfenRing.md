@@ -3,7 +3,10 @@ layout: kringlecon2022
 title: "Elfen Ring"
 author: "Andrew Cherney"
 date: 2023-01-15 19:52:13
-tags: kringlecon ci/cd sandbox-escape
+tags: 
+- kringlecon 
+- ci/cd 
+- sandbox-escape
 ---
 ## Clone with a Difference
 ***

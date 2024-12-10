@@ -3,7 +3,11 @@ layout: kringlecon2022
 title: "Tolkien Ring"
 author: "Andrew Cherney"
 date: 2023-01-15 19:52:13
-tags: kringlecon windows wireshark suricata
+tags: 
+- kringlecon 
+- windows 
+- wireshark 
+- suricata
 ---
 ## Suricata Regatta
 ***
