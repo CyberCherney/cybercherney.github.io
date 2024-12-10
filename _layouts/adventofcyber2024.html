@@ -2,17 +2,14 @@
 layout: post
 ---
 
-<!DOCTYPE html>
 <style>
 
-body.calendar {
+.calendar-wrapper {
   font-family: Arial, sans-serif;
-  display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 300px;
   margin: 0;
-  background-color: #0f0f23;
 }
 
 .calendar {
@@ -43,7 +40,7 @@ body.calendar {
 
 </style>
 <html lang="en">
-<body id="calendar">
+<div class="calendar-wrapper">
   <div class="calendar">
     <div class="day-label">Sun</div>
     <div class="day-label">Mon</div>
@@ -80,10 +77,7 @@ body.calendar {
     <a href="" class="day">24</a>
     <a href="" class="day">25</a>
   </div>
-</body>
-</html>
-<br>
-<br>
+</div>
 
 {{ content }}
 
