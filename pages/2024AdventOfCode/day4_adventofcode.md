@@ -133,8 +133,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
 ```
 
 It's notable here I made the valid position functionality a function as I suspected I would need to reuse it for part 2 and multiple times in part 1. Additionally the array assembler was defined here as I have a hunch the copy paste power of using this for future days will save me at least some time. 
