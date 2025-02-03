@@ -5,3 +5,4 @@ Gemfile.lock
 .jekyll-cache
 _activeboxes
 _allprogress
+test.sh
