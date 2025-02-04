@@ -97,7 +97,7 @@ I notice that woodenk is a part of the logs group, and searching for files assoc
   </image>
 ```
 
-This appears it could be vulnerable to an XML eXternal Entity, or an XXE. The file permissions here are only root can edit these xml files. I'd say there's a good chance that whatever process is updating this is run by root. I cannot edit anything file in this directory however. The location of the images is **/opt/panda_search/src/main/resources/static/img**. I have a hunch that if I look at the metadata they will have an author field set. 
+This appears it could be vulnerable to an XML eXternal Entity, or an XXE. The file permissions here are only root can edit these xml files. I'd say there's a good chance that whatever process is updating this is run by root. I cannot edit any file in this directory however. The location of the images is **/opt/panda_search/src/main/resources/static/img**. I have a hunch that if I look at the metadata they will have an author field set. 
 
 Looking further I see that the panda search jar file is run as root, and is most likely the process controlling these files. I'll quickly download it and sift through what is up with the /credits directory. I spin up a python http server and wget the jar file. 
 

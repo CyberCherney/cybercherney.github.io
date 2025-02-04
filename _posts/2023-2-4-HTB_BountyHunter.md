@@ -315,7 +315,7 @@ root
 Invalid ticket.
 ```
 
-Great. From here I can change the **whoami** to **/bin/bash -p** and gain a root shell after running the python script once more. 
+The reason this allows us to run any command we effectively want is an unsanitized use of eval marked by my 4d on the code. When eval is determining what to add (or concatenate) to the first number provided it will evaluate the expression, which imports os and uses the system module to run commands as the user running the process. From here I can change the **whoami** to **/bin/bash -p** and gain a root shell after running the python script once more. 
 
 ```bash
 development@bountyhunter:~$ sudo python3.8 /opt/skytrain_inc/ticketValidator.py 

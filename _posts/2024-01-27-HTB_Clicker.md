@@ -361,7 +361,7 @@ exit_group(0)                           = ?
 +++ exited with 0 +++
 ```
 
-We throw up a flag here but also find out next vector. strace is preventing this from running with sudo so the permissions are not there to allow for reading files. But secondly we see that the default directory is `/home/jack/queries/`. I will try and read the ssh key since that is an obvious valuable locked within a home directory. 
+We throw up a flag here but also find our next vector. strace is preventing this from running with sudo so the permissions are not there to allow for reading files. But secondly we see that the default directory is `/home/jack/queries/`. I will try and read the ssh key since that is an obvious valuable locked within a home directory. 
 
 ```
 --------------
