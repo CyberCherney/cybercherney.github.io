@@ -48,7 +48,7 @@ The Security+ certification is a system administrator certification with a heavy
 ## CompTIA Pentest+
 
 **Recommended Certifications:** CompTIA Network+, CompTIA Security+  
-**Recommended Experience:** Minimum 3-4 years of hands-on information  
+**Recommended Experience:** Minimum 3-4 years of hands-on information security or related experience
 
 *Click on the icon or title to be sent to credly to verify this certification.*
 
