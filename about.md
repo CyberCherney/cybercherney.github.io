@@ -29,7 +29,7 @@ ___
 ## CompTIA Security+
 
 **Recommended Certification:** CompTIA Network+  
-**Recommended Experience:** 2 years IT administration  
+**Recommended Experience:** 2 years security or systems administration  
 
 *Click on the icon or title to be sent to credly to verify this certification.*
 
