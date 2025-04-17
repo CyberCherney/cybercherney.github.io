@@ -31,7 +31,7 @@ img: /img/$lower/$lower
 author: Andrew Cherney
 date: 
 tags: htb $diff-box
-icon: "assets/icons/$lower.png"
+icon: "/assets/icons/$lower.png"
 post_description: ""
 ---
 
