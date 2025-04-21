@@ -1,6 +1,6 @@
 ---
 layout: frontpage
-title: Tags
+title: "Tags"
 ---
 
 <h1>Tags</h1>
