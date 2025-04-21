@@ -17,7 +17,7 @@ Web applications at their core need some framework to run and execute code to cr
 Where JS can be ran is dependent on the type of XSS being exploited. The three basic ones break down into Reflected, Stored, and DOM. Reflected is only client side through the web browser and requires a link to be visited for exploitation. Stored places the payload on the server to execute for all visiting a page. DOM targets the Document Object Model of JS and seeks to exploit code locally running in the browser. The severity of an XSS vulnerability is dependent both on the type of XSS it is as well as the popularity or functions of the endpoint itself. XSS after all can only perform actions a user could and access information a user can access, so an anonymous note taking app having XSS is likely to have low impact. 
 
 Getting deeper into the topic there are specific renderers such as jQuery and AngularJS which have specific exploits to bypass sandboxes or exploit code within the framework. Content Security Policy can be added for an additional layer of complexity for bypassing. A `Content-Security-Policy` can define self or a domain to accept scripts and images from. There could be a nonce present that is required to be in a tag or a hash of the script in question to prevent tampering. CSP presents a whole host of protections to bypass and some imagination is needed to properly navigate it.
-
+{% raw %}
 ## Methodology
 
 When looking for XSS ask/try the following:
@@ -100,6 +100,7 @@ When looking for XSS ask/try the following:
 	- [ ] `x=x=>{alert(1)}` can be used to define a functions then call is after defining it
 		- [ ] toString can be redefined to x, concatenating window can call toString
 
+{% endraw %}
 ## Capabilities
 
 XSS  
