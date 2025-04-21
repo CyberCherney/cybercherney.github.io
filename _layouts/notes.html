@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div id="content-wrapper">
+    <div class="inner clearfix">
+      <section id="main-content">
+        <br>
+          <h1>{{ page.title }}</h1>
+          {{ content }}
+      </section>
+      <aside id="sidebar">
+        <br>
+        <a href="#top" style="color:#fff; font-size: 22px;">Notes</a>
+        <br>
+        <h3>Functionality</h3>
+            {% for page in site.pages %}
+                <ul>
+                {% if page.path contains 'pages/webapp_notes/functionality/' %}
+                    <li id="notes">
+                    <a href="{{ page.url }}" id="notes">{{ page.title }}</a>
+                    </li>
+                {% endif %}
+                </ul>
+            {% endfor %}
+
+        <h3>Vulnerabilities</h3>
+            {% for page in site.pages %}
+                <ul>
+                {% if page.path contains 'pages/webapp_notes/vulnerabilities/' %}
+                    <li id="notes">
+                    <a href="{{ page.url }}" id="notes">{{ page.title }}</a>
+                    </li>
+                {% endif %}
+                </ul>
+            {% endfor %}
+        </span>
+      </aside>
+    </div>
+  </div>
+
+
+
+
+
+<script>
+    // Clickable checkboxes
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(checkbox => {
+      // remove the disabled attribute; added by kramdown by default
+      checkbox.removeAttribute('disabled');
+    });
+</script>
+
