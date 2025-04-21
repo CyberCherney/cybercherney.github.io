@@ -117,7 +117,7 @@ aside#sidebar {
   background: transparent url(../images/dark-sidebar-bg.jpg) 0 0 no-repeat;
   position: sticky;
   top: 136px;
-  z-index: 1200;
+  z-index: 0;
 }
 
 aside#sidebar p.repo-owner,
@@ -173,6 +173,13 @@ p code {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
+li code {
+  background-color: #444; 
+  padding: 4px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
 
 pre {
   padding: 20px;
@@ -406,6 +413,14 @@ nav[data-toggle="toc"] {
   top: 42px;
 }
 
+li#notes {
+  margin-top: -5px;
+}
+
+a#notes {
+  color: #767676;
+}
+
 li {
   list-style-type: none;
 }
@@ -445,6 +460,10 @@ li {
 .clearfix {display: inline-block;}
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
+
+input {
+  margin-right: 8px;
+}
 
 /* #Media Queries
 ================================================== */
