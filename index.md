@@ -2,7 +2,7 @@
 layout: frontpage
 ---
 
-<h1>Posts</h1>
+<h1>Feed</h1>
 <ul class="post-list">
   {% for post in site.posts %}
   <li class="post-list-li">
