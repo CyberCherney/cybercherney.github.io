@@ -3,19 +3,31 @@
 # in addition to prepping images to markdown format
 
 
-# creates directory and post shell
+# creates directory and post skeleton
 function box_init () {
 
 read -p "Enter the challenge name: " name
+
+if [[ -z "$name" ]]; then
+    echo "Error: Needs a name"
+    exit 1
+fi
+
 read -p "Enter the box difficulty: " diff
-lower=`echo "${name,,}"`
-upper=`echo "${name^}"`
+
+if [[ ! "$diff" =~ ^(easy|medium|hard|insane|"")$ ]]; then
+    echo "Error: Needs a HTB difficulty or leave blank"
+    exit 1
+fi
+
+lower="${name,,}"
+upper="${name^}"
 lower_front_page=$lower"_front_page"
 
 dir="_activeboxes/$lower"
 
 # check to not overwrite
-if [ -d $dir ]; then
+if [ -d "$dir" ]; then
     echo 'Directory already exists'
     exit 1
 fi
@@ -82,11 +94,11 @@ function upload_post () {
 # prepping variables for post name and directory
 read -p "Enter the post to upload: " post_name
 post=`echo ${post_name,,}`
-directory=`echo "_activeboxes/$post"`
+directory="_activeboxes/$post"
 
 # directory check
-if [ ! -d $directory ]; then
-    echo "No directory named $box"
+if [ ! -d "$directory" ]; then
+    echo "No directory named $post"
     exit 1
 fi
 
