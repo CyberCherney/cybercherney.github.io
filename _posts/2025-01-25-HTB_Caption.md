@@ -5,7 +5,7 @@ box: caption
 img: /img/caption/caption
 author: Andrew Cherney
 date: 2025-01-25
-tags: htb hard-box season-6 linux webapp git h2-database ssh-tunneling thrift python 
+tags: htb hard-box season-6 linux webapp git h2-database ssh-tunneling thrift python rce
 icon: "assets/icons/caption.png"
 post_description: "A fairly easy hard box using some obscure technologies. Starting off is a gitbucket service with simple credentials. As root the backend h2 database can be interacted with to create an alias which runs commands through Runtime. With that shell root can be seen running the LogService repo's server file. After generating python code with thrift and creating a client the log reading service can be fed a malicious log to achieve rce as root."
 ---

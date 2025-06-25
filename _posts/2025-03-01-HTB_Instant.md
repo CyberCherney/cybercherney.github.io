@@ -5,7 +5,7 @@ box: instant
 img: /img/instant/instant
 author: Andrew Cherney
 date: 2025-03-01
-tags: htb medium-box season-6 linux apktool jwt webapp directory-traversal lfi powershell
+tags: htb medium-box season-6 linux android apktool jwt webapp directory-traversal lfi powershell api swagger
 icon: "assets/icons/instant.png"
 post_description: "Starts off with an apk download into some analysis. After finding two subdomains and a jwt within an activity, the API can be called for LFI. Once SSH'd in a session file can be found for Solar-PUTTY. With a decrypting executable and a wrapper it is possible to find the password for the session and get the root password. Cool box that let me solidify my apk knowledge and enumeration methods."
 ---

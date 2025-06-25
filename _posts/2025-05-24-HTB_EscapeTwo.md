@@ -5,7 +5,7 @@ box: escapetwo
 img: /img/escapetwo/escapetwo
 author: Andrew Cherney
 date: 2025-05-24
-tags: htb easy-box season-7 windows smb ldap active-directory mssql bloodhound certipy esc4 certs 
+tags: htb easy-box season-7 windows smb ldap active-directory mssql bloodhound certipy esc4 impacket
 icon: "assets/icons/escapetwo.png"
 post_description: "In an atypical fashion this box starts with Active Directory credentials. Using those credentials an SMB share can be accessed which leaks user account info. In that leak the sa account can enable xp_cmdshell to gain a reverse shell. The old SQL2019 directory holds the sql_svc password which doubles as ryan's password. Finally as ryan we can dump ca_svc's NT hash, and use ESC4 to grab the Administrator hash and compromise the box."
 ---

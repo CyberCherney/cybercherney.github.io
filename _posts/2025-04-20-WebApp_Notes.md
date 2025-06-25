@@ -5,7 +5,7 @@ img: /img/webapp_notes/
 author: Andrew Cherney
 date: 2025-04-20 17:57:44
 icon: /assets/icons/webapp_notes.png
-tags: webapp notes blog
+tags: webapp notes blog methodology
 post_description: "This is a compilation of web application hacking notes I have put together after years of labs, challenges, and read writeups. Each note comes with a methodology on how to explore that functionality or search for and exploit that vulnerability. These notes will be updated as I update my personal notes and more sections will appear as I get around to parsing the scrambled notes I have into coherent methodologies and examples."
 ---
 

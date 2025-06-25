@@ -5,7 +5,7 @@ box: chemistry
 img: /img/chemistry/chemistry
 author: Andrew Cherney
 date: 2025-03-09
-tags: htb easy-box season-6 linux webapp cve python sqlite ssh-tunneling directory-traversal
+tags: htb easy-box season-6 linux webapp cve python ssti sqlite ssh-tunneling directory-traversal
 icon: "assets/icons/chemistry.png"
 post_description: "Classic easy box with 2 CVEs and a database reading as the solution. CIF files were something I hadn't known about before this box, and after a CVE allows for an SSTI inspired payload commands can be run within a python application. The database for that CIF processing website contains the user's credentials. And finally the internal monitoring webapp is using a server vulnerable to directory traversal which allows for LFI as root compromising the root SSH key."
 ---
