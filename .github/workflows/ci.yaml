@@ -17,5 +17,11 @@ jobs:
       - name: install dependencies
         run: |
           bundle install
+      - name: Make scripts executable
+        run: |
+          chmod +x script/cibuild
+          chmod +x script/bootstrap
+          chmod +x script/release
+          chmod +x script/validate-html
       - name: run ci build
         run: script/cibuild
