@@ -4,7 +4,7 @@ set -e
 
 script/bootstrap
 bundle exec jekyll build
-bundle exec htmlproofer ./_site --check-html --check-sri --allow-hash-href --url-ignore "/tags,/about,http://cdn.credly.com/assets/utilities/embed.js" --disable-external --checks-to-ignore LinkCheck
+bundle exec htmlproofer ./_site --check-html --check-sri --allow-hash-href --url-ignore "/tags,/about" --disable-external --checks-to-ignore LinkCheck
 bundle exec rubocop -D --config .rubocop.yml
 bundle exec script/validate-html
 gem build jekyll-theme-architect.gemspec
