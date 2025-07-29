@@ -5,7 +5,7 @@ img: /img/obsidian_daily_driver
 author: Andrew Cherney
 date: 2025-07-26 22:23:43
 tags: blog notes obsidian adhd tutorial
-icon: "/assets/icons/obsidian_daily_driver.webp"
+icon: "/assets/icons/obsidian_daily_driver.png"
 post_description: "Attention deficit man goes on a journey to find a good task tracking system and application that works for him. If you're interested in turning Obsidian into your daily driver task manager for projects and recurring tasks then this is the post for you. "
 ---
 
