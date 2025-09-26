@@ -17,7 +17,7 @@ title: "Tags"
     {% for post in tag[1] %}
       <a href="{{ post.url }}">
         <div class="post {{ tag[0] }}">
-          <img src="{{ post.icon }}" alt="icon" style="float: left; height: 50px; margin-left: -60px;">
+          <img src="{{ post.icon }}" alt="icon" style="float: left; height: 50px; margin-left: -60px;" loading="lazy">
           <div class="title">{{ post.title }}</div>
           <div class="date">{{ post.date | date: "%b %d, %Y" }}</div>
         </div>

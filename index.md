@@ -20,7 +20,7 @@ layout: frontpage
     </span>
     <p><br>
     <a href="{{ post.url }}">
-      <img src="{{ post.icon }}" alt="box icon" style="float: right; height: 95px; margin-top: -110px;">
+      <img src="{{ post.icon }}" alt="box icon" style="float: right; height: 95px; margin-top: -110px;" loading="lazy">
     </a>
     {{ post.post_description }}
     </p>
