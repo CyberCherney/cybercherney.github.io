@@ -27,7 +27,7 @@ For the note part I was already using Obsidian and settled on using its daily no
 
 # Obsidian + Plugins Breakdown 
 
-DISCLAIMER: Community plugins are not always safe, the once I chose I have been using for long enough to consider them safe but if you take a serious and cautious approach to safety and security investigate them yourself before usage. 
+DISCLAIMER: Community plugins are not always safe, the ones I chose I have been using for long enough to consider them safe but if you take a serious and cautious approach to safety and security investigate them yourself before usage. 
 
 ## Obsidian
 
@@ -217,6 +217,22 @@ If you have a series of tasks to complete, but they lack a larger overarching go
 ![My Daily Driver](/img/obsidian_daily_driver/my_daily_driver.png)
 
 Last words, this setup's efficacy is only as good as you can design and set it up. With the right planning and foresight you can turn it into your daily driver for years. Now go out there and be productive.
+
+# March 2026 Update
+
+At some point Tasks got an update that adds a search toolbar to each tasks code block. I didn't see an initial way to disable this in the settings or the code block itself so I decided to remove it with custom CSS. 
+
+Navigate to Settings>Appearance>CSS snippits and click the folder icon to open where CSS files are loaded from. Make a new one named anything you want. Mine for this will be tasks_custom.css and I placed the following into it.
+
+```
+.plugin-tasks-toolbar {
+	display: none;
+}
+```
+
+Once that file is created hit the refresh button, enable it, then double check it worked. If that doesn't work open the developer inspect element with Ctrl+Shift+I and hover over the bar to find the class name that encompasses the full box and nothing else. replace the *.plugin-tasks-toolbar* accordingly. 
+
+![CSS Searchbar](/img/obsidian_daily_driver/march_tasks_searchbar.png)
 
 ---
 <sup>1</sup> In Microsoft To Do it is possible to make lists and toss tasks with due dates into them seen below, however you cannot see the whole project in a view besides individual line items and the menu for creating and sorting lists is a little juvenile for my liking.
