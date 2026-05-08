@@ -1,0 +1,3 @@
+#!/bin/bash
+
+bundle exec htmlproofer ./_site --check-html --check-sri --allow-hash-href --url-ignore "/tags,/about" --disable-external --checks-to-ignore LinkCheck,ScriptCheck
