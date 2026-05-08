@@ -9,7 +9,3 @@ plugins:
 
 sass:
   quiet_deps: true
-
-htmlproofer:
-  checks_to_ignore:
-    - ScriptCheck
