@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<script src="https://cloud.umami.is/script.js" 
+        data-website-id="7da9efa2-b242-4d57-b0f3-6206be0e6612"></script>
+<script>
+  // Give Umami a moment to fire its pageview, then redirect
+  window.addEventListener('load', () => {
+    setTimeout(() => window.location.replace("{{ page.redirect_to }}"), 300);
+  });
+</script>

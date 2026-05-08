@@ -1,5 +1,5 @@
 ---
 permalink: /resume
-redirect_to: 
-    - /about
+layout: redirect
+redirect_to: /about
 ---
